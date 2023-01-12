@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+/*Reseteo de estilos CSS*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+/*----------------------------------------------------------------------*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+header {
+  background-color: #eb5e28;
+  border-bottom: 4px solid #000;
+  padding: 15px;
+  text-align: center;
+}
+
+p:nth-child(1) {
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+p:nth-child(2) {
+  font-weight: bold;
+  font-size: 1vw;
+}
+
+body {
+  background-color: #403d39;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 40% repeat(3,20%);
+  grid-template-rows: auto auto;
+}
+
+#uno{
+  display: grid;
+  grid-template-columns: 13% repeat(3,28.5%);
+  grid-template-rows: auto auto;
+  grid-column: 1/5;
+  grid-row: 1/2;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+nav li{
+  padding-left: 5%;
+  margin-top: 10%;
+  color: white;
+}
+
+#uno div:nth-child(2){
+  grid-column: 2/4;
+  width: 95%;
+  color: #403d39;
+  border: #eb5e28 5px solid;
+  background-color: #ccc5b9;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+#uno div:nth-child(2) img{
+  border-radius: 10px;
+  width: 90%;
+  height: 500px;
+  margin-bottom: 10px;
+}
+
+#uno div:nth-child(3){
+  grid-column: 4/5;
+  width: 100%;
+  color: #403d39;
+  border: #eb5e28 5px solid;
+  background-color: #ccc5b9;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+#uno div:nth-child(3) img{
+  border-radius: 10px;
+  width: 95%;
+  margin-bottom: 10px;
+  height: 500px;
+}
+
+#dos{
+  display: grid;
+  grid-template-columns: 33.3% repeat(2,33.3%);
+  grid-template-rows: auto auto;
+  grid-column: 1/5;
+  grid-row: 2/3;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#dos div {
+  color: #403d39;
+  border: #eb5e28 5px solid;
+  background-color: #ccc5b9;
+  border-radius: 10px;
+  padding: 1%;
+  text-align: center;
+  width: 95%;
+  padding-top: 3%;
+}
+
+#dos img {
+  border-radius: 10px;
+  margin-bottom: 2%;
+  width: 90%;
+}
+
+footer{
+  background-color: #eb5e28;
+  display: grid;
+  grid-template-columns: 33.3% repeat(2,33.3%);
+  text-align: center;
+  padding: 1%;
+  align-items: center;
+}
+
+footer img {
+  width: 8%;
+  height: 50px;
+}
+
+footer img:nth-child(2){
+  margin-left: 5%;
+  margin-right: 5%;
+}
